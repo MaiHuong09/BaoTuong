@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào mừng ngày Nhà giáo Việt Nam 20/11</title>
+    <link rel="stylesheet" href="báo nhỏ.css"><!-- Liên kết với file CSS -->
+</head>
+<body>
+    <header>
+        <h1>Chào mừng ngày Nhà giáo Việt Nam 20/11</h1>
+    </header>
+    <div class="content">
+        <h2>Lời tri ân đến thầy cô</h2>
+        <p>Kính thưa quý thầy cô giáo kính mến! Nhân ngày Nhà giáo Việt Nam 20/11, chúng em xin gửi đến thầy cô lời tri ân sâu sắc nhất. Thầy cô không chỉ là người truyền đạt kiến thức, mà còn là người thắp sáng ngọn lửa đam mê học tập trong chúng em. Chúng em xin hứa sẽ luôn ghi nhớ những lời dạy bảo của thầy cô, nỗ lực học tập để trở thành những người công dân có ích. Kính chúc thầy cô luôn mạnh khỏe, hạnh phúc và thành công trong sự nghiệp trồng người cao quý</h2>
+        <h2>Hình ảnh kỷ niệm</h2>
+    <div class="image-gallery">
+        <img src="https://i.imgur.com/2M0wqSl.jpeg" alt="Uploaded Image">
+        <img src="https://i.imgur.com/WGNDiMt.jpeg" alt="Uploaded Image">
+        <img src="https://i.imgur.com/6HWi5NP.jpeg" alt="Uploaded Image">
+        <img src="https://i.imgur.com/00JgKkD.jpeg" alt="Uploaded Image">
+        <img src="https://i.imgur.com/tnEFiPu.jpeg" alt="Uploaded Image">
+        <img src="https://i.imgur.com/K2SvceP.jpeg" alt="Uploaded Image">
+        <img src="https://i.imgur.com/TTMISYp.jpeg" alt="Uploaded Image">
+        <img src="https://i.imgur.com/9plk9hp.jpeg" alt="Uploaded Image">
+    </div>
+        <h2>Video kỷ niệm</h2>
+   <iframe src="https://www.facebook.com/plugins/video.php?href=https://fb.watch/xVg9tGPU1A/" 
+    width="560" height="315" style="border:none;overflow:hidden" 
+    scrolling="no" frameborder="0" allowfullscreen="true">
+</iframe>
+</iframe>
+</div>
+</div>
+ <h2>Góc Bình Luận</h2>
+    
+    <textarea id="commentInput" class="comment-box" placeholder="Nhập bình luận của bạn..."></textarea>
+    <button class="btn" onclick="postComment()">Gửi bình luận</button>
+
+    <div class="comments-section" id="commentsSection">
+     <textarea id="commentInput" class="comment-box" placeholder="Nhập email của bạn..."></textarea>
+    <button class="btn" onclick="postComment()">Gửi email</button>
+
+    <div class="comments-section" id="commentsSection">
+        <h3>Bình luận:</h3>
+    </div>
+
+    <!-- Phần chân trang -->
+    <footer>
+        &copy; 2025 - Tri ân thầy cô nhân ngày 20/11 | Thiết kế bởi một nhóm học sinh lớp 12A10  
+        <br>
+        &copy; email: nhaco4nangtien@gmail.com
+        <br>
+        &copy; Thành viên: Hải Yến, Khánh Uyên, Mai Hương, Hà Vi
+    </footer>
+
+    <script>
+        function postComment() {
+            var commentText = document.getElementById("commentInput").value;
+            if (commentText.trim() === "") {
+                alert("Vui lòng nhập nội dung bình luận!");
+                return;
+            }
+
+            var commentSection = document.getElementById("commentsSection");
+            var newComment = document.createElement("div");
+            newComment.classList.add("comment");
+            newComment.innerHTML = "<strong>Người dùng:</strong> " + commentText;
+            commentSection.appendChild(newComment);
+
+            document.getElementById("commentInput").value = ""; // Xóa nội dung sau khi gửi
+        }
+    </script>
+
+</body>
+</html>
